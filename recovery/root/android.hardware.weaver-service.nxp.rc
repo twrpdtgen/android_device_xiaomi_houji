@@ -1,0 +1,8 @@
+service weaver_nxp /system/bin/android.hardware.weaver-service.nxp
+    class hal
+    user root
+    group root drmrpc
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin:/odm/lib64:/odm/lib
+    disabled
+    seclabel u:r:recovery:s0
+
